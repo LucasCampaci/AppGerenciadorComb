@@ -1,0 +1,29 @@
+
+<ion-view title="Inserir Informações" id="page2" style="background-color:#F1F1F1;">
+  <ion-content padding="true" class="has-header">
+    <form id="inserirInformaEs-form4" name="form" class="list">
+      <ion-radio id="inserirInformaEs-radio4" ng-model="informacao.combustivel"
+      value="Gasolina Comum" ng-click="Foi()">Gasolina Comum</ion-radio>
+      <ion-radio id="inserirInformaEs-radio6"ng-model="informacao.combustivel"
+      value="Gasolina Aditivada" ng-click="Foi()"> Gasolina Aditivada</ion-radio>
+      <ion-radio id="inserirInformaEs-radio5" ng-model="informacao.combustivel"
+      value="Etanol" ng-click="Foi()">Etanol</ion-radio>
+      <div class="spacer" style="width: 300px; height: 10px;"></div>
+      <label class="item item-input" id="inserirInformaEs-input6">
+        <span class="input-label">KM</span>
+        <input type="number" ng-model="informacao.km">
+      </label>
+      <label class="item item-input" id="inserirInformaEs-input3">
+        <span class="input-label">Litros</span>
+        <input type="number" ng-model="informacao.litro">
+      </label>
+      <label class="item item-input" id="inserirInformaEs-input4">
+        <span class="input-label">Valor</span>
+        <input type="number" ng-model="informacao.valor">
+      </label>
+      <div class="spacer" style="width: 300px; height: 23px;"></div>
+      <button ng-click="teste(informacao)" id="inserirInformaEs-button1" style="color:#F5F0ED;border-radius:-1px -1px -1px -1px;" class="button button-positive  button-block icon ion-android-done-all">Salvar</button>
+      <button type="reset" style="color:#F5F0ED;border-radius:-1px -1px -1px -1px;" class="button button-positive  button-block">Limpar Campos</button>
+    </form>
+  </ion-content>
+</ion-view>
